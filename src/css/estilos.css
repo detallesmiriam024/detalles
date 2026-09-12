@@ -1,0 +1,944 @@
+/* =====================================================
+   DETALLES | ESTILOS GENERALES
+   ===================================================== */
+
+
+/* =========================
+   VARIABLES DE DISEÑO
+   ========================= */
+
+:root {
+
+    /* COLORES */
+
+    --color-principal: #b98282;
+    --color-principal-oscuro: #956565;
+
+    --color-fondo: #fffaf7;
+    --color-fondo-secundario: #f7eeea;
+
+    --color-texto: #493d3a;
+    --color-texto-suave: #796c68;
+
+    --color-blanco: #ffffff;
+
+
+    /* TIPOGRAFÍA */
+
+    --fuente-principal: Arial, sans-serif;
+
+
+    /* CONTENEDOR */
+
+    --ancho-contenedor: 1200px;
+
+
+    /* SOMBRA */
+
+    --sombra-suave: 0 8px 25px rgba(80, 50, 45, 0.08);
+
+
+    /* BORDES */
+
+    --radio: 16px;
+}
+
+
+/* =========================
+   RESETEO GENERAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--fuente-principal);
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTENEDOR
+   ========================= */
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: var(--ancho-contenedor);
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   CONTROL DE SECCIONES
+   ===================================================== */
+
+.seccion-pagina {
+    display: none !important;
+}
+
+
+.seccion-pagina.activa {
+    display: block !important;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+.cabecera {
+
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.88);
+
+    border-bottom: 1px solid rgba(238, 227, 223, 0.7);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+/* CONTENEDOR DEL HEADER */
+
+.cabecera .menu {
+
+    min-height: 75px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.cabecera .logo {
+
+    display: flex;
+
+    align-items: center;
+
+    width: auto;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+
+.cabecera .logo img {
+
+    display: block;
+
+    width: 130px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+.cabecera .navegacion {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 28px;
+
+    margin-left: auto;
+}
+
+
+/* BOTONES DEL MENÚ */
+
+.cabecera .enlace-menu {
+
+    border: none;
+
+    background: transparent;
+
+    padding: 8px 4px;
+
+    color: var(--color-texto);
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+
+.cabecera .enlace-menu:hover {
+
+    color: var(--color-principal);
+}
+
+
+/* =====================================================
+   INICIO
+   ===================================================== */
+
+.inicio {
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-color: var(--color-fondo-secundario);
+
+    padding: 80px 0;
+}
+
+
+.inicio .contenedor {
+
+    max-width: 850px;
+}
+
+
+/* TEXTO SUPERIOR */
+
+.texto-superior {
+
+    color: var(--color-principal-oscuro);
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+
+/* TÍTULO */
+
+.inicio h1 {
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.descripcion-inicio {
+
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: var(--color-texto-suave);
+
+    font-size: 1.1rem;
+}
+
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.boton {
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background-color: var(--color-principal);
+
+    color: var(--color-blanco);
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.boton:hover {
+
+    background-color: var(--color-principal-oscuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CATÁLOGO Y CONTACTO
+   ===================================================== */
+
+.catalogo,
+.contacto {
+
+    padding: 100px 0;
+}
+
+
+/* CATÁLOGO */
+
+.catalogo {
+
+    background-color: var(--color-fondo);
+}
+
+
+/* CONTACTO */
+
+.contacto {
+
+    background-color: var(--color-fondo-secundario);
+
+    text-align: center;
+}
+
+
+/* TÍTULOS */
+
+.catalogo h2,
+.contacto h2 {
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.descripcion-seccion {
+
+    color: var(--color-texto-suave);
+
+    margin-bottom: 45px;
+}
+
+
+/* =====================================================
+   CUADRÍCULA DE PRODUCTOS
+   ===================================================== */
+
+.cuadricula-productos {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =====================================================
+   PIE DE PÁGINA
+   ===================================================== */
+
+.pie {
+
+    padding: 30px 0;
+
+    background-color: var(--color-texto);
+
+    color: var(--color-blanco);
+
+    text-align: center;
+
+    font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .cuadricula-productos {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .inicio {
+
+        min-height: 550px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    /* CONTENEDOR */
+
+    .contenedor {
+
+        width: 92%;
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .cabecera .menu {
+
+        min-height: 65px;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+
+    /* LOGO */
+
+    .cabecera .logo img {
+
+        width: 105px;
+    }
+
+
+    /* MENÚ */
+
+    .cabecera .navegacion {
+
+        gap: 16px;
+
+        margin-left: auto;
+    }
+
+
+    .cabecera .enlace-menu {
+
+        padding: 6px 3px;
+
+        font-size: 0.85rem;
+    }
+
+
+    /* =========================
+       INICIO
+       ========================= */
+
+    .inicio {
+
+        min-height: 520px;
+
+        padding: 70px 0;
+    }
+
+
+    .inicio h1 {
+
+        font-size: 2.5rem;
+    }
+
+
+    .descripcion-inicio {
+
+        font-size: 1rem;
+    }
+
+
+    /* =========================
+       CATÁLOGO / CONTACTO
+       ========================= */
+
+    .catalogo,
+    .contacto {
+
+        padding: 70px 0;
+    }
+
+
+    /* =========================
+       PRODUCTOS
+       ========================= */
+
+    .cuadricula-productos {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+    }
+}
+
+/* =====================================================
+   TARJETAS DE PRODUCTOS
+   ===================================================== */
+
+.tarjeta-producto {
+
+    background-color: var(--color-blanco);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: var(--sombra-suave);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.tarjeta-producto:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(80, 50, 45, 0.12);
+}
+
+
+/* =========================
+   IMAGEN
+   ========================= */
+
+.imagen-producto {
+
+    width: 100%;
+
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    cursor: pointer;
+    height: 250px;
+}
+
+
+.imagen-producto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+.imagen-producto:hover img {
+
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   PRECIO
+   ========================= */
+
+.informacion-producto {
+
+    padding: 12px 15px;
+
+    text-align: center;
+}
+
+
+.precio {
+
+    margin: 0;
+
+    color: var(--color-principal-oscuro);
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    .informacion-producto {
+
+        padding: 10px;
+    }
+
+
+    .precio {
+
+        font-size: 0.85rem;
+    }
+
+
+    .frase {
+
+        font-size: 0.82rem;
+    }
+
+}
+
+
+/* =========================
+   FRASE DE CATEGORÍA
+   ========================= */
+
+.frase-categoria {
+
+    max-width: 650px;
+
+    margin: -25px auto 45px;
+
+    text-align: center;
+
+    color: var(--color-principal-oscuro);
+
+    font-size: 0.95rem;
+
+    font-style: italic;
+}
+
+/* =====================================================
+   TARJETAS DE CATEGORÍAS
+   ===================================================== */
+
+.cuadricula-categorias {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+    margin-top: 45px;
+}
+
+
+.tarjeta-categoria {
+
+    background-color: var(--color-blanco);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: var(--sombra-suave);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.tarjeta-categoria:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(80, 50, 45, 0.12);
+}
+
+
+/* IMAGEN */
+
+.imagen-categoria {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+}
+
+
+.imagen-categoria img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+.categoria-contenido {
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+
+.categoria-contenido h3 {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* BOTÓN */
+
+.boton-categoria {
+
+    border: none;
+
+    background: none;
+
+    color: var(--color-principal-oscuro);
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.boton-categoria:hover {
+
+    color: var(--color-principal);
+}
+
+
+/* VOLVER */
+
+.volver-categorias {
+
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+
+.boton-volver {
+
+    border: none;
+
+    background: none;
+
+    color: var(--color-principal-oscuro);
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.boton-volver:hover {
+
+    color: var(--color-principal);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .cuadricula-categorias {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .cuadricula-categorias {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+    }
+
+
+    .categoria-contenido {
+
+        padding: 13px 8px;
+    }
+
+
+    .categoria-contenido h3 {
+
+        font-size: 0.95rem;
+    }
+
+
+    .boton-categoria {
+
+        font-size: 0.8rem;
+    }
+
+}
+
+/* =========================
+   INFORMACIÓN TAGS AROMÁTICOS
+========================== */
+
+.informacion-tags {
+    max-width: 320px;
+    margin: 25px auto 40px;
+}
+
+.informacion-tags img {
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 20spx;
+    box-shadow: var(--sombra-suave);
+}
+
+/* =========================
+   TAGS AROMATIZADORES EN KIT
+========================== */
+
+.kits-aromaticos {
+    text-align: center;
+    margin: 60px auto 30px;
+}
+
+.kits-aromaticos h3 {
+    margin-bottom: 8px;
+    color: var(--color-principal-oscuro);
+}
+
+.kits-aromaticos p {
+    margin: 0;
+    color: var(--color-texto-suave);
+}
+
+/* =========================
+   TAGS AROMÁTICOS
+========================== */
+
+.contenido-tags {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px auto;
+}
+
+.informacion-tags {
+    width: 320px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.informacion-tags img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: var(--sombra-suave);
+}
+
+.productos-tags {
+    flex: 1;
+    max-width: 700px;
+}
+
+.productos-tags .cuadricula-productos {
+    margin: 0;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .contenido-tags {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .informacion-tags {
+        width: 320px;
+        max-width: 90%;
+    }
+
+    .productos-tags {
+        width: 100%;
+    }
+
+}
