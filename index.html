@@ -97,23 +97,61 @@
 
         <div class="contenido-hero">
 
-            <p class="texto-superior">Pequeños detalles</p>
+            <p class="texto-superior">
+                Pequeños detalles
+            </p>
 
-            <h1>Detalles que hacen especial cada momento</h1>
+            <h1 class="titulo-especial">
+                <span class="titulo-detalles">Detalles</span>
+
+                <span class="titulo-frase">
+                    que hacen especial<br>
+                    cada momento
+                </span>
+            </h1>
+
+            <div class="adorno-titulo">
+                <span></span>
+                <span class="corazon">♥</span>
+                <span></span>
+            </div>
 
             <p class="descripcion-inicio">
                 Encontrá productos especiales para regalar, decorar y disfrutar.
             </p>
 
-            <button type="button" class="boton-hero" data-seccion="catalogo">
+            <button
+                type="button"
+                class="boton-hero"
+                data-seccion="catalogo"
+            >
                 Ver catálogo
                 <span>→</span>
             </button>
 
         </div>
 
-        <div class="espacio-foto">
-            <!-- Más adelante colocamos aquí la foto -->
+    </div>
+
+    <div class="beneficios-inicio">
+
+        <div class="beneficio">
+            <span class="icono-beneficio">♡</span>
+            <p>Detalles que emocionan</p>
+        </div>
+
+        <div class="separador-beneficio"></div>
+
+        <div class="beneficio">
+            <span class="icono-beneficio">❀</span>
+            <p>Para cada ocasión</p>
+        </div>
+
+        <div class="separador-beneficio"></div>
+
+        <div class="beneficio">
+            <span class="icono-beneficio">✦</span>
+            <p>Calidad en cada elección</p>
         </div>
 
     </div>
@@ -126,67 +164,73 @@
 
 
         <!-- =========================
-             CATÁLOGO
-        ========================== -->
+     CATÁLOGO
+========================== -->
 
-        <section
-            id="catalogo"
-            class="seccion-pagina"
+<section
+    id="catalogo"
+    class="seccion-pagina"
+>
+
+    <div class="contenedor">
+
+        <div class="encabezado-catalogo">
+
+            <p class="catalogo-etiqueta">
+                Nuestra colección
+            </p>
+
+            <h2 class="titulo-catalogo">
+                Encontrá ese
+                <span>detalle especial</span>
+            </h2>
+
+            <div class="adorno-catalogo">
+                <span></span>
+                <span class="flor-catalogo">❀</span>
+                <span></span>
+            </div>
+
+            <p class="descripcion-catalogo">
+                Descubrí nuestras categorías y encontrá algo especial
+                para regalar, decorar o disfrutar.
+            </p>
+
+        </div>
+
+
+    <!-- CATEGORÍAS -->
+
+    <div class="cuadricula-categorias">
+
+
+    <!-- VELAS -->
+
+    <article class="tarjeta-categoria">
+
+    <img
+        src="img/fotos de las categorias/categoria velas.jpg"
+        alt="Velas aromáticas"
+        class="imagen-categoria"
+    >
+
+    <div class="overlay-categoria">
+
+        <h3>
+            Velas aromáticas
+        </h3>
+
+        <button
+            type="button"
+            class="boton-categoria"
+            data-seccion="velas"
         >
+            Explorar →
+        </button>
 
-            <div class="contenedor">
+    </div>
 
-                <p class="texto-superior">
-                    Descubrí nuestras creaciones
-                </p>
-
-                <h2>
-                    Catálogo
-                </h2>
-
-                <p class="descripcion-seccion">
-
-                    Elegí una categoría para conocer
-                    nuestros productos.
-
-                </p>
-
-
-                <!-- CATEGORÍAS -->
-
-                <div class="cuadricula-categorias">
-
-
-                    <!-- VELAS -->
-
-                    <article class="tarjeta-categoria">
-
-                        <div class="imagen-categoria">
-
-                            <img
-                                src="img/fotos de las categorias/categoria velas.jpg"
-                                alt="Velas aromáticas"
-                            >
-
-                        </div>
-
-                        <div class="categoria-contenido">
-
-                            <h3>
-                                Velas aromáticas
-                            </h3>
-
-                            <button
-                                type="button"
-                                class="boton-categoria"
-                                data-seccion="velas"
-                            >
-                                Ver productos →
-                            </button>
-
-                        </div>
-
-                    </article>
+</article>
 
 
 
@@ -194,16 +238,15 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
 
                             <img
                                 src="img/fotos de las categorias/categoria carteras.jpg"
                                 alt="Carteras"
+                                class="imagen-categoria"
                             >
 
-                        </div>
 
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Carteras
@@ -214,7 +257,7 @@
                                 class="boton-categoria"
                                 data-seccion="carteras"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -227,16 +270,14 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
 
                             <img
                                 src="img/fotos de las categorias/categoria anillos.jpg"
                                 alt="Anillos"
+                                class="imagen-categoria"
                             >
 
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Anillos
@@ -247,7 +288,7 @@
                                 class="boton-categoria"
                                 data-seccion="anillos"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -260,16 +301,15 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
+                       
                             <img
                                 src="img/fotos de las categorias/categoria pulseras.jpg"
                                 alt="Pulseras"
+                                class="imagen-categoria"
                             >
 
-                        </div>
 
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Pulseras
@@ -280,7 +320,7 @@
                                 class="boton-categoria"
                                 data-seccion="pulseras"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -293,16 +333,13 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
                             <img
                                 src="img/fotos de las categorias/categoria collares.jpg"
                                 alt="Collares"
+                                class="imagen-categoria"
                             >
 
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Collares
@@ -313,7 +350,7 @@
                                 class="boton-categoria"
                                 data-seccion="collares"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -326,16 +363,13 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
                             <img
                                 src="img/fotos de las categorias/categoria tags aromaticos.jpg"
                                 alt="Aromatizadores decorativos"
+                                class="imagen-categoria"
                             >
 
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Aromatizadores decorativos
@@ -346,7 +380,7 @@
                                 class="boton-categoria"
                                 data-seccion="tags-aromaticos"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -359,16 +393,13 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
                             <img
                                 src="img/fotos de las categorias/categoria portallaves.jpeg"
                                 alt="Portallaves"
+                                class="imagen-categoria"
                             >
 
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Portallaves
@@ -379,7 +410,7 @@
                                 class="boton-categoria"
                                 data-seccion="portallaves"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -392,16 +423,13 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
                             <img
                                 src="img/fotos de las categorias/categoria frases madera.jpg"
                                 alt="Frases de madera"
+                                class="imagen-categoria"
                             >
 
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Frases de madera
@@ -412,7 +440,7 @@
                                 class="boton-categoria"
                                 data-seccion="frases-madera"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -423,16 +451,12 @@
 
                     <article class="tarjeta-categoria">
 
-                        <div class="imagen-categoria">
-
                             <img
                                 src="img/fotos de las categorias/categoria tazas.jpg"
                                 alt="Tazas con encanto"
+                                class="imagen-categoria"
                             >
-
-                        </div>
-
-                        <div class="categoria-contenido">
+                        <div class="overlay-categoria">
 
                             <h3>
                                 Tazas con encanto
@@ -443,7 +467,7 @@
                                 class="boton-categoria"
                                 data-seccion="tazas-encanto"
                             >
-                                Ver productos →
+                                Explorar →
                             </button>
 
                         </div>
@@ -497,6 +521,10 @@
 
 
                 <div class="cuadricula-productos">
+
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
 
                     <article class="tarjeta-producto">
 
@@ -692,6 +720,10 @@
 
                 <div class="cuadricula-productos">
 
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
+
                     <article class="tarjeta-producto">
 
                         <div class="imagen-producto">
@@ -823,6 +855,10 @@
 
                 <div class="cuadricula-productos">
 
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
+
                     <article class="tarjeta-producto">
 
                         <div class="imagen-producto">
@@ -923,6 +959,10 @@
 
 
                 <div class="cuadricula-productos">
+
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
 
                     <article class="tarjeta-producto">
 
@@ -1039,6 +1079,10 @@
 
 
                 <div class="cuadricula-productos">
+
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
 
                     <article class="tarjeta-producto">
 
@@ -1166,6 +1210,10 @@
 
 <div class="cuadricula-productos">
 
+    <p class="aviso-zoom">
+        Tocá una imagen para verla más grande
+    </p>
+
     <!-- ACÁ VAN LOS SPRAYS -->
      <img
         src="img/productos/spray con aromatiz.jpg" loading="lazy"
@@ -1225,6 +1273,10 @@
                     <div class="productos-tags">
 
                         <div class="cuadricula-productos">
+
+                            <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
 
 
                             <article class="tarjeta-producto">
@@ -1349,6 +1401,10 @@
 
 
                 <div class="cuadricula-productos">
+
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
 
                     <article class="tarjeta-producto">
 
@@ -1508,6 +1564,10 @@
 
                 <div class="cuadricula-productos">
 
+                    <p class="aviso-zoom">
+                        Tocá una imagen para verla más grande
+                    </p>
+
                     <article class="tarjeta-producto">
 
                         <div class="imagen-producto">
@@ -1608,6 +1668,10 @@
 
 
                 <div class="cuadricula-productos">
+
+                    <p class="aviso-zoom">
+                         Tocá una imagen para verla más grande
+                    </p>
 
                     <article class="tarjeta-producto">
 
@@ -1760,6 +1824,47 @@
 
     </footer>
 
+    <!-- ========================================
+     LIGHTBOX / ZOOM DE PRODUCTOS
+======================================== -->
+
+<div class="lightbox" id="lightbox">
+
+    <!-- CERRAR -->
+    <button
+        type="button"
+        class="lightbox-cerrar"
+        id="lightbox-cerrar"
+        aria-label="Cerrar imagen"
+    >
+        ×
+    </button>
+
+
+    <!-- IMAGEN -->
+    <div class="lightbox-contenido">
+
+<img
+    src=""
+    alt="Producto ampliado"
+    class="lightbox-imagen"
+    id="lightbox-imagen"
+    draggable="false"
+>
+
+        <!-- SEGUNDO ZOOM -->
+        <button
+            type="button"
+            class="lightbox-zoom"
+            id="lightbox-zoom"
+            aria-label="Ampliar imagen"
+        >
+            🔍
+        </button>
+
+    </div>
+
+</div>
 
 
     <!-- =========================
